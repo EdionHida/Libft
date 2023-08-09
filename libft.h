@@ -1,16 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ehida <ehida@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/08 15:16:05 by ehida             #+#    #+#             */
-/*   Updated: 2023/08/08 16:58:17 by ehida            ###   ########.fr       */
+/*   Created: 2023/08/08 16:33:40 by ehida             #+#    #+#             */
+/*   Updated: 2023/08/09 17:07:26 by ehida            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
-{
-	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
-}
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdarg.h>
+
+//ctype.h
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
+
+size_t	ft_strlen(const char *s);
+char	*ft_strchr(const char *s, int c);
+
+#endif
