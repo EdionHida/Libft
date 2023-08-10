@@ -6,7 +6,7 @@
 /*   By: ehida <ehida@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 16:33:40 by ehida             #+#    #+#             */
-/*   Updated: 2023/08/09 17:07:26 by ehida            ###   ########.fr       */
+/*   Updated: 2023/08/10 20:35:27 by ehida            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,8 @@ int		ft_tolower(int c);
 
 size_t	ft_strlen(const char *s);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+
+void	*ft_memset(void *b, int c, size_t len);
 
 #endif

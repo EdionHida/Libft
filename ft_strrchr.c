@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ehida <ehida@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/09 17:07:46 by ehida             #+#    #+#             */
-/*   Updated: 2023/08/10 19:58:39 by ehida            ###   ########.fr       */
+/*   Created: 2023/08/10 18:58:15 by ehida             #+#    #+#             */
+/*   Updated: 2023/08/10 19:54:49 by ehida            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
+	int	i;
+
+	i = (int)ft_strlen(s);
 	if (s)
 	{
-		while (*s != (char)c && *s != 0)
-			s++;
-		if (*s == (char)c)
-			return ((char *)s);
+		while (i >= 0)
+		{
+			if (s[i] == (char)c)
+				return ((char *)s + i);
+			i--;
+		}
 	}
 	return (NULL);
 }

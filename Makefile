@@ -6,14 +6,15 @@
 #    By: ehida <ehida@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/08 16:17:20 by ehida             #+#    #+#              #
-#    Updated: 2023/08/09 17:07:35 by ehida            ###   ########.fr        #
+#    Updated: 2023/08/10 20:34:53 by ehida            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
-		ft_toupper.c ft_tolower.c ft_strlen.c ft_strchr.c
+		ft_toupper.c ft_tolower.c ft_strlen.c ft_strchr.c ft_strrchr.c \
+		ft_memset.c
 
 OBJ = $(SRC:%.c=%.o)
 
