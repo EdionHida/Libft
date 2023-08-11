@@ -6,7 +6,7 @@
 /*   By: ehida <ehida@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/08 16:33:40 by ehida             #+#    #+#             */
-/*   Updated: 2023/08/10 20:35:27 by ehida            ###   ########.fr       */
+/*   Updated: 2023/08/11 16:14:41 by ehida            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 
 void	*ft_memset(void *b, int c, size_t len);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
