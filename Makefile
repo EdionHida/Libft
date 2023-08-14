@@ -6,7 +6,7 @@
 #    By: ehida <ehida@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/08 16:17:20 by ehida             #+#    #+#              #
-#    Updated: 2023/08/11 16:12:50 by ehida            ###   ########.fr        #
+#    Updated: 2023/08/14 11:51:34 by ehida            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_toupper.c ft_tolower.c ft_strlen.c ft_strchr.c ft_strrchr.c \
-		ft_memset.c ft_strncmp.c
+		ft_memset.c ft_strncmp.c ft_bzero.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
 
 OBJ = $(SRC:%.c=%.o)
 
